@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rescate Felino | Adopta un Gato Abandonado</title>
+  <meta name="description" content="Landing page para rescatar y reubicar gatos abandonados. Dona, adopta y haz la diferencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- README desplegado en comentarios para simulación de proyecto profesional -->
+  <!--
+    Project: Rescate Felino - Landing Page
+    Propósito: Captar donaciones, voluntarios y adopciones para gatos abandonados.
+    Tecnologías: HTML5, CSS3 (Flexbox, Grid, media queries, variables), accesibilidad WCAG AA.
+    Estructura: header, hero, beneficios, cómo funciona, testimonios, CTA y footer.
+    Cómo usar: abrir index.html en navegador; usar style.css para estilos.
+  -->
+
+  <!-- feat: se agrega estructura base de la landing -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#start" aria-label="Inicio - Rescate Felino">
+        <span class="logo-icon" aria-hidden="true">🐾</span>
+        <span class="logo-text">Deja tu huella acá</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#zonas">Dónde estamos</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="gatos.html">Siguiente</a></li>
+          <li><a href="#contacto" class="btn-nav">Actúa ahora</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="start">
+    <!-- hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <article class="hero-content">
+          <h1 id="hero-title">Convierte un maullido en un hogar seguro</h1>
+          <p>Únete al movimiento de rescate de gatos abandonados. Dona, adopta o hazte voluntario y cambia vidas hoy mismo.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#contacto">Quiero ayudar</a>
+            <a class="btn outline" href="#beneficios">Ver programas</a>
+          </div>
+        </article>
+        <figure class="hero-visual" aria-hidden="true">
+          <img src="supervivencia-gatos-6362b9f553582.jpg" alt="Gato rescatado mira hacia la cámara" loading="lazy" />
+          <figcaption>Gato buscando un hogar seguro.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- estadísticas -->
+    <section class="stats-section" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title">Nuestro impacto</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-icon">🐱</span>
+            <span class="stat-number">+120</span>
+            <span class="stat-label">gatos rescatados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">🏠</span>
+            <span class="stat-number">85</span>
+            <span class="stat-label">adopciones exitosas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">❤️</span>
+            <span class="stat-number">300+</span>
+            <span class="stat-label">voluntarios</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- beneficios -->
+    <section id="beneficios" class="section" aria-labelledby="beneficios-title">
+      <div class="container">
+        <h2 id="beneficios-title">Impacto real, comunidad más fuerte</h2>
+        <p class="section-subtitle">En 3 pasos simples, tu acción se convierte en refugio y cariño.</p>
+
+        <div class="cards-grid">
+          <article class="card" aria-labelledby="beneficio1-title">
+            <h3 id="beneficio1-title">Adopta con confianza</h3>
+            <p>Perfil completo de cada gato, seguimiento de adaptación y soporte post-adopción.</p>
+          </article>
+          <article class="card" aria-labelledby="beneficio2-title">
+            <h3 id="beneficio2-title">Dona recursos</h3>
+            <p>Fondo transparente para atención veterinaria, comida y refugio temporal.</p>
+          </article>
+          <article class="card" aria-labelledby="beneficio3-title">
+            <h3 id="beneficio3-title">Voluntariado flexible</h3>
+            <p>Horarios adaptables, capacitación y comunidad de cuidadores responsables.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- zonas de rescate -->
+    <section id="zonas" class="section alt-background" aria-labelledby="zonas-title">
+      <div class="container">
+        <h2 id="zonas-title">Dónde estamos y dónde rescatamos</h2>
+        <p class="section-subtitle">Cubrimos múltiples comunas de Santiago y alrededores para ayudar a más gatos abandonados.</p>
+
+        <div class="zonas-grid">
+          <article class="zona-card">
+            <h3>🏠 Base principal: Pudahuel</h3>
+            <p>Nuestro centro de operaciones principal donde realizamos adopciones, chequeos veterinarios y capacitaciones.</p>
+            <p><strong>Dirección:</strong> Calle Los Alerces 123, Pudahuel, Santiago</p>
+          </article>
+          <article class="zona-card">
+            <h3>🔍 Zonas de rescate activas</h3>
+            <ul>
+              <li>Pudahuel y alrededores</li>
+              <li>Maipú y Estación Central</li>
+              <li>Cerrillos y Cerro Navia</li>
+              <li>Quilicura y Colina</li>
+              <li>Lampa y Til Til</li>
+            </ul>
+          </article>
+          <article class="zona-card">
+            <h3>📍 Cobertura expandida</h3>
+            <p>Trabajamos con refugios aliados en:</p>
+            <ul>
+              <li>Santiago Centro</li>
+              <li>Providencia y Las Condes</li>
+              <li>Ñuñoa y Macul</li>
+              <li>La Florida y Puente Alto</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- apoya nuestra causa -->
+    <section id="apoya-causa" class="section" aria-labelledby="apoya-title">
+      <div class="container">
+        <h2 id="apoya-title">Apoya nuestra causa</h2>
+        <p class="section-subtitle">Tu ayuda nos permite rescatar y dar hogares seguros a más felinos.</p>
+
+        <div class="support-buttons">
+          <a class="btn primary" href="#contacto">Donar comida</a>
+          <a class="btn outline" href="#contacto">Donar dinero</a>
+          <a class="btn secondary" href="#contacto">Ser voluntario</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- gatos disponibles -->
+    <section id="gatos" class="section" aria-labelledby="gatos-title">
+      <div class="container">
+        <h2 id="gatos-title">Gatos listos para adopción</h2>
+        <p class="section-subtitle">Elige el compañero ideal según su personalidad y necesidades. Ahora tenemos 4 gatos disponibles.</p>
+
+        <div class="cat-filters" aria-label="Filtrar gatos disponibles">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="ninos">Niños</button>
+          <button class="filter-btn" data-filter="tranquilo">Tranquilos</button>
+          <button class="filter-btn" data-filter="jugueton">Juguetones</button>
+        </div>
+        <div class="gatos-grid" id="gatosGrid">
+          <article class="cat-card" data-category="tranquilo">
+            <img src="razas-de-gatos.avif" alt="Gato gris con ojos verdes" loading="lazy" />
+            <h3>Kiwi</h3>
+            <p>Edad 2 años • Cariñoso • Vacunado • Esterilizado</p>
+            <p>Kiwi es un gato tranquilo y afectuoso que disfruta de las caricias y los momentos de tranquilidad. Ideal para familias con niños mayores.</p>
+            <a class="btn outline" href="#contacto">Ver perfil</a>
+          </article>
+          <article class="cat-card">
+            <img src="razas-de-gatos.avif" alt="Gato atigrado relajado" loading="lazy" />
+            <h3>Luna</h3>
+            <p>Edad 1 año • Juguetona • Buena con niños • Desparasitado</p>
+            <p>Luna es una gata joven y juguetona que ama explorar y jugar con juguetes. Se lleva bien con niños y otros animales.</p>
+            <a class="btn outline" href="#contacto">Ver perfil</a>
+          </article>
+          <article class="cat-card">
+            <img src="razas-de-gatos.avif" alt="Gato blanco con manchas negras" loading="lazy" />
+            <h3>Sol</h3>
+            <p>Edad 3 años • Tranquilo • Necesita hogar interior • Historias previas</p>
+            <p>Sol es un gato maduro y tranquilo que prefiere ambientes interiores. Ha tenido experiencias previas y busca un hogar paciente y amoroso.</p>
+            <a class="btn outline" href="#contacto">Ver perfil</a>
+          </article>
+          <article class="cat-card">
+            <img src="razas-de-gatos.avif" alt="Gato montés en ventana" loading="lazy" />
+            <h3>Rayo</h3>
+            <p>Edad 2.5 años • Energético • Le encantan los juegos • Muy cariñoso</p>
+            <p>Rayo es un gato energético y cariñoso que adora los juegos interactivos. Necesita un hogar activo que le proporcione estimulación diaria.</p>
+            <a class="btn outline" href="#contacto">Ver perfil</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- cómo funciona -->
+    <section id="como-funciona" class="section alt-background" aria-labelledby="como-title">
+      <div class="container">
+        <h2 id="como-title">Cómo funciona nuestro programa</h2>
+        <div class="steps-grid">
+          <article class="step" aria-labelledby="step1-title">
+            <h3 id="step1-title">1. Reporta y rescata</h3>
+            <p>Encuentra un gato, envía foto y ubicación, y nuestro equipo coordina la asistencia inmediata.</p>
+          </article>
+          <article class="step" aria-labelledby="step2-title">
+            <h3 id="step2-title">2. Cuidados especializados</h3>
+            <p>Chequeos, vacunación y rehabilitación emocional en refugios aliados.</p>
+          </article>
+          <article class="step" aria-labelledby="step3-title">
+            <h3 id="step3-title">3. Adoption ready</h3>
+            <p>Perfil humano-fauna, entrevistas de hogares y apoyo para la integración.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonios -->
+    <section id="testimonios" class="section" aria-labelledby="testimonios-title">
+      <div class="container">
+        <h2 id="testimonios-title">Historias que inspiran</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <p>“Adoptar a Mía fue la mejor decisión. Su transformación es increíble y el equipo siempre estuvo presente.”</p>
+            <footer>- Laura, adoptante</footer>
+          </article>
+          <article class="testimonial">
+            <p>“Donar ha sido transparente y gratificante: se ve el impacto directo en cada rescatado.”</p>
+            <footer>- Miguel, donante</footer>
+          </article>
+          <article class="testimonial">
+            <p>“Como voluntario, aprendí prácticas de cuidado profesional y formé parte de una comunidad sólida.”</p>
+            <footer>- Ana, voluntaria</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- call-to-action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <div>
+          <h2 id="cta-title">Listo para marcar la diferencia?</h2>
+          <p>Únete hoy y obtén nuestro kit digital de bienvenida: guía de adopción responsable, recursos de entrenamiento y el primer mes de comida gratis.</p>
+          <a class="btn primary" href="#contacto">Comienza ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacto y formulario -->
+    <section id="contacto" class="section" aria-labelledby="contacto-title">
+      <div class="container">
+        <h2 id="contacto-title">Únete como protector del rescate</h2>
+        <p class="section-subtitle">Completa el formulario y un coordinador te contactará en 24h.</p>
+
+        <form class="form-grid" action="#" method="post" aria-label="Formulario de contacto de Rescate Felino">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ana Pérez" />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="ana@ejemplo.com" />
+          </div>
+          <div class="form-group">
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" required placeholder="+56 9 6000 1234" />
+          </div>
+          <div class="form-group full-width">
+            <label for="mensaje">¿Cómo te gustaría ayudar?</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Adoptar, donar, ser voluntario..."></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit" class="btn primary">Enviar mi solicitud</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h3>RescateFelino</h3>
+        <p>Organización sin fines de lucro dedicada al rescate y adopción de gatos abandonados.</p>
+      </div>
+      <div>
+        <h4>Enlaces útiles</h4>
+        <ul>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Visita nuestro Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Visita nuestro Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Visita nuestro Twitter">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RescateFelino. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* fix: mejora en responsive del navbar */
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
